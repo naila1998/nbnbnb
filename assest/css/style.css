@@ -1,0 +1,171 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+a{
+    text-decoration: none;
+}
+.list{
+    list-style-type: none;
+}
+.container{
+    width: 85%;
+    margin: auto;
+}
+.small{
+    text-transform: lowercase;
+}
+.big{
+    text-transform: uppercase;
+}
+.capital{
+    text-transform: capitalize;
+}
+.btn{
+
+}
+/* end public */
+
+/* nav start */
+.nav{
+    position: fixed;
+    width: 100%;
+    left: 0px;
+    top: 0px;
+    padding: 25px;
+    z-index: 9999;
+}
+.nav .logo{
+    width: 20%;
+}
+.nav .logo a{
+    font-size: 18px;
+    font-weight: 900;
+}
+
+.nav .list{
+    width: 60%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+}
+.nav .list .list-item a{
+    margin-right: 20px;
+    text-transform: capitalize;
+    font-size: 18px;
+    color: gray;
+}
+.nav .list .list-item :hover i{
+   transform: translateX(-5px);
+}
+.nav .list .list-item a i{
+   
+    font-size: 12px;
+    margin-right: 7px;
+    transition: all .5s;
+}
+.btn{
+   
+    background-color: #0061f2;
+    padding: 10px 12px ;
+    color: white;
+    border: 1px solid #0061f2;
+    border-radius: 9px;
+    text-transform: capitalize ;
+    cursor: pointer;
+    transition: all .5s;
+}
+.btn:hover{
+    background-color: #0052ce;
+    border-color: #0052ce;
+
+}
+
+.drop-dawn{
+box-shadow: -10px 0px 3px #e8e2e2 ;
+list-style-type: none;
+position: absolute;
+top: 60px;
+opacity: 0;
+transition: all .5s;
+}
+.list-item:hover .drop-dawn{
+    top: 25px;
+    opacity: 1;
+}
+.nav .list-item{
+    position: relative;
+ 
+}
+/* end nav */
+
+/* header start */
+
+header{
+  margin-top: 200px;
+}
+c-h{
+
+    font-weight: 500;
+    line-height: 1.2;
+    color: #363d47;
+   
+}
+
+.c-p{
+    width: 72%;
+    line-height: 1.5;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+header .content-headar input:nth-child(1){
+    width: 55%;
+    border: 1px solid #eef2f8 ;
+    background-color: #eef2f8;
+    padding: 10px;
+    margin-right: 5px;
+    border-radius: 5px;
+}
+header .img-header{
+    flex-grow: 1;
+}
+header .img-header img{
+    width: 100%;
+}
+
+@keyframes left{
+
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+
+}
+.content-headar{
+    animation: left 1s;
+}
+
+@keyframes right{
+
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+
+}
+
+.img-header{
+    animation: right 1s;
+}
+
